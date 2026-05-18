@@ -1,0 +1,5 @@
+backend/venv/
+backend/notes.db
+__pycache__/
+*.pyc
+.vscode/

@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eaf3ff;
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    width: 420px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 22px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+input,
+textarea,
+select {
+    width: 95%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+textarea {
+    height: 85px;
+    resize: vertical;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 7px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+#cancelEditButton {
+    margin-left: 6px;
+}
+
+#clearAllButton {
+    margin-bottom: 12px;
+}
+
+#noteCount {
+    font-size: 13px;
+    color: #555555;
+}
+
+.note-card {
+    background-color: #f5f9ff;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #4a90e2;
+}
+
+.note-card h3 {
+    margin-top: 0;
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+
+.note-card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.note-card small {
+    color: #666666;
+    font-size: 12px;
+}
+
+.note-actions {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.icon-button {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border-radius: 6px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-button:hover {
+    background-color: #333333;
+}
+
+.icon-button svg {
+    width: 14px;
+    height: 14px;
+    fill: white;
+}

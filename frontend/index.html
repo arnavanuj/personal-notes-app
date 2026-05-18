@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+
+        <h1>Personal Notes App</h1>
+
+        <h2>Create a Note</h2>
+        <select id="noteCategory">
+    <option value="Personal">Personal</option>
+    <option value="Work">Work</option>
+    <option value="Shopping">Shopping</option>
+    <option value="School">School</option>
+    <option value="Other">Other</option>
+     </select>
+
+    <br><br>
+
+        <input id="noteTitle" type="text" placeholder="Enter note title">
+
+        <br><br>
+
+        <textarea id="noteContent" placeholder="Enter note details"></textarea>
+
+        <br><br>
+
+        <button id="saveNoteButton">Save Note</button>
+        <button id="cancelEditButton" style="display: none;">Cancel Edit</button>
+
+        <h2>My Notes</h2>
+
+        <input id="searchInput" type="text" placeholder="Search notes">
+
+        <p id="noteCount">Total notes: 0</p>
+
+        <button id="clearAllButton">Clear All Notes</button>
+
+        <div id="notesList">
+            <p>No notes created yet.</p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
