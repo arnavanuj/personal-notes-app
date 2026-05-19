@@ -46,4 +46,7 @@ Personal Notes App is a beginner-friendly full-stack web application that allows
 | DELETE | /notes/{note_id} | Delete a note |
 API documentation is available through FastAPI Swagger UI at:
 
+
+
+
 http://127.0.0.1:8000/docs

@@ -30,6 +30,11 @@ jobs:
         run: |
           cd backend
           python -m py_compile main.py
+          
+      - name: Run backend API tests
+        run: |
+         cd backend
+         pytest
 
   frontend-check:
     runs-on: ubuntu-latest
