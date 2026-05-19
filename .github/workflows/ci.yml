@@ -1,0 +1,45 @@
+name: Personal Notes App CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  backend-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install backend packages
+        run: |
+          cd backend
+          pip install -r requirements.txt
+
+      - name: Check backend syntax
+        run: |
+          cd backend
+          python -m py_compile main.py
+
+  frontend-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Get latest code
+        uses: actions/checkout@v4
+
+      - name: Check frontend files exist
+        run: |
+          test -f frontend/index.html
+          test -f frontend/script.js
+          test -f frontend/style.css
