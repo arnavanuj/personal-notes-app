@@ -20,3 +20,19 @@ Personal Notes App is a beginner-friendly full-stack web application that allows
 - SQLite
 - Git
 - GitHub Actions
+
+## How to Run the Project
+### Run Backend
+
+1. Open terminal in the project root folder.
+2. Go inside backend folder.
+3. Activate virtual environment.
+4. Start FastAPI server.
+5. Open Swagger UI at http://127.0.0.1:8000/docs
+
+### Run Frontend
+
+1. Open the frontend folder.
+2. Open index.html in browser.
+3. Use the app to create, view, edit, delete, search, and categorize notes.
+
