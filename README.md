@@ -36,3 +36,14 @@ Personal Notes App is a beginner-friendly full-stack web application that allows
 2. Open index.html in browser.
 3. Use the app to create, view, edit, delete, search, and categorize notes.
 
+## API Endpoints
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | /notes | Get all notes |
+| GET | /notes/{note_id} | Get one note by ID |
+| POST | /notes | Create a new note |
+| PUT | /notes/{note_id} | Update an existing note |
+| DELETE | /notes/{note_id} | Delete a note |
+API documentation is available through FastAPI Swagger UI at:
+
+http://127.0.0.1:8000/docs
