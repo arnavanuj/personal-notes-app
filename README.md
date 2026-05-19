@@ -44,9 +44,17 @@ Personal Notes App is a beginner-friendly full-stack web application that allows
 | POST | /notes | Create a new note |
 | PUT | /notes/{note_id} | Update an existing note |
 | DELETE | /notes/{note_id} | Delete a note |
-API documentation is available through FastAPI Swagger UI at:
 
 
 
+API documentation is available through FastAPI Swagger UI at: http://127.0.0.1:8000/docs
 
-http://127.0.0.1:8000/docs
+## CI/CD
+This project uses GitHub Actions for basic CI checks.
+
+The CI workflow runs automatically when code is pushed to the main branch.
+The CI workflow checks:
+
+- Backend Python syntax
+- Backend API tests using pytest
+- Required frontend files
